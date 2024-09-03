@@ -1,0 +1,1 @@
+This folder contains the different estimator, `.est`, and template, `.tpl`, files used for the simulation of DNA data with fastsimcoal 2.7. The different hypotheses numbers correspond to the different scenarios explored and presented in the root folder.
