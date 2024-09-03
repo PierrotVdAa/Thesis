@@ -1,0 +1,1 @@
+This folder contains the code for the multiclass classifier as well as the data used for it (the summary statistics from the DNA sequences produced by fastsimcoal2). This folder also contains the code to produce the PCA and t-SNE.
