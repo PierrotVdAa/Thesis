@@ -1,0 +1,20 @@
+// Search ranges and rules file
+// ****************************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1  ALPES	logunif  1000   1e4   output
+1 	Allfrag	unif	10000	200000	output
+1	TIMEDIFF1	logunif	10	200000	output
+0	Aresize	logunif	1	1e2	output
+0	ANCresizeInt	logunif	1e-4	0.01	output
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+
+1	MASSIFC = 0.25*ALPES	output
+1	PYRENEES = 0.1657*ALPES	output
+1	VOSGES = 0.0335*ALPES	output
+1	ANCresizeTime = Allfrag+TIMEDIFF1	output

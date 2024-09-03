@@ -1,0 +1,31 @@
+// Search ranges and rules file
+// ****************************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1	ALPES	logunif  1000   1e4   output
+0	AresizeANC	logunif	1e-3	100	output
+1	Bottlestart	unif	10000	12000	output
+1	Bottleend	unif	100000	120000	output
+1	Timediffrec	logunif	10	200000	output
+1	Timediffanc	logunif	10	200000	output
+0	ANCresizeInt	logunif	1e-3	0.01	output
+0	Aresize1	logunif	1e-4	1e-1	output
+0	Mresize1	logunif	1e-4	1e-1	output
+0	Presize1	logunif	1e-4	1e-1	output
+0	Vresize1	logunif	1e-4	1e-1	output
+0	Aresize2	logunif	1	1e4	output
+0	Mresize2	logunif	1	1e4	output
+0	Presize2	logunif	1	1e4	output
+0	Vresize2	logunif	1	1e4	output
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+
+1	MASSIFC = 0.25*ALPES	output
+1	PYRENEES = 0.1657*ALPES	output
+1	VOSGES = 0.0335*ALPES	output
+1	Timediv	= Bottleend+Timediffrec	output
+1	ANCresizeTime =	Timediv+Timediffanc	output
